@@ -1,7 +1,6 @@
-import React from 'react' // мы обязаны импортировать необходимые пакеты в каждом файле
-import PropTypes from 'prop-types' // у Article это react и prop-types
+import React from 'react'
+import PropTypes from 'prop-types'
 
-// далее просто скопировано все что было, кроме последней строки
 
 class Article extends React.Component {
   state = {
@@ -35,11 +34,11 @@ class Article extends React.Component {
 
 Article.propTypes = {
   data: PropTypes.shape({
-    id: PropTypes.number.isRequired, // добавили id, это число, обязательно
+    id: PropTypes.number.isRequired, 
     author: PropTypes.string.isRequired,
     text: PropTypes.string.isRequired,
     bigText: PropTypes.string.isRequired,
   }),
 }
 
-export { Article } // именованный экспорт
+export { Article }
