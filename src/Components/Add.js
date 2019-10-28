@@ -1,6 +1,4 @@
-import React from 'react' // мы обязаны импортировать необходимые пакеты в каждом файле
-//import PropTypes from 'prop-types' // у Article это react и prop-types
-
+import React from 'react'
 
 class Add extends React.Component {
   state = {
