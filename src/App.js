@@ -11,9 +11,9 @@ class App extends React.Component {
                 return response.json()
             })
             .then(data => {
-                setTimeout(() => { // добавили задержку
+                setTimeout(() => {
                     this.setState({ isLoading: false, news: data })
-                }, 1000) // в три секунды
+                }, 1000)
             })
 
     }
@@ -29,8 +29,8 @@ class App extends React.Component {
             nextFilteredNews = [...state.news]
 
             nextFilteredNews.forEach((item, index) => {
-                if (item.bigText.toLowerCase().indexOf('pubg') !== -1) {
-                    item.bigText = 'SPAM MEANS BAN'
+                if (item.bigText.toLowerCase().indexOf('patriots') !== -1) {
+                    item.bigText = 'LA-LI-LU-LE-LO'
                 }
             })
 
