@@ -14,7 +14,7 @@ class News extends React.Component {
         return <Article key={item.id} data={item} />;
       });
     } else {
-      newsTemplate = <p>К сожалению новостей нет</p>;
+      newsTemplate = <p>No news fo ya</p>;
     }
 
     return newsTemplate;
